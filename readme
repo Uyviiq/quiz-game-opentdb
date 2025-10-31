@@ -1,0 +1,49 @@
+# quiz-game-opentdb
+
+this started as the day 17 quiz game from angela yu’s python course.  
+you know, the one with `question_model`, `quiz_brain`, and all that oop stuff.  
+but i wanted something more alive not just the same static question list.
+
+so i built a function that talks to the **Open Trivia Database API**.  
+now the game actually fetches real questions from the internet.  
+you can choose how many you want, pick a category, set the difficulty  
+and it just pulls them in, clean and fresh every time.
+
+the code uses `requests` to hit the api endpoint,  
+with a small payload carrying the user’s settings.  
+if no category is chosen, it simply drops that field and goes random.  
+keeps things simple, keeps things human.
+
+there’s also a `try/except` block because sometimes the api or proxy just doesn’t cooperate.  
+it fails gracefully instead of breaking everything  
+prints the error, skips the crash, and keeps the vibe intact.
+
+i did run into a few small logic errors while testing  
+like the global flags not resetting when they should,  
+or the payload trying to reference a missing category key.  
+stuff that reminds you how tiny details can quietly break the flow.  
+fixed them one by one, and the code feels cleaner for it.
+
+after that, it all ties back into the oop structure from angela’s version  
+question objects, the quiz brain, and a main loop that keeps things moving.  
+except now it’s not just a static project it connects to something real.
+
+# how to run
+
+clone the repo, open a terminal, and run:
+
+```bash
+python main.py
+```
+
+it’ll ask you:
+&nbsp;how many questions
+&nbsp;what category
+&nbsp;difficulty
+&nbsp;then the quiz begins.
+
+what i learned
+&nbsp;how to talk to an api
+&nbsp;how to handle parameters and logic errors without chaos
+&nbsp;and how to blend oop structure with something dynamic and live.
+&nbsp;it’s a small thing, but it feels like a real step forward.
