@@ -31,19 +31,16 @@ except now it’s not just a static project it connects to something real.
 # how to run
 
 clone the repo, open a terminal, and run:
-
-```bash
 python main.py
-```
 
 it’ll ask you:
-&nbsp;how many questions
-&nbsp;what category
-&nbsp;difficulty
-&nbsp;then the quiz begins.
+how many questions
+what category
+difficulty
+then the quiz begins.
 
 what i learned
-&nbsp;how to talk to an api
-&nbsp;how to handle parameters and logic errors without chaos
-&nbsp;and how to blend oop structure with something dynamic and live.
-&nbsp;it’s a small thing, but it feels like a real step forward.
+how to talk to an api
+how to handle parameters and logic errors without chaos
+and how to blend oop structure with something dynamic and live.
+it’s a small thing, but it feels like a real step forward.
